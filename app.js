@@ -37,3 +37,6 @@ app.listen(3000, function(){
     console.log("Server has started on port 3000");
     console.log(items);
 })
+
+module.exports = app;
+module.exports.handler = serverless(app);
