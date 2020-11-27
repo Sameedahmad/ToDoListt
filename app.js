@@ -14,7 +14,7 @@ app.use(bodyParser.urlencoded({
 }));
 app.use(express.static("public"));
 
-mongoose.connect("mongodb+srv://sameedwebdev:winwinnodeal@cluster0.jwt46.mongodb.net/TodoListDB", {
+mongoose.connect("mongodb+srv:///TodoListDB", {
 	useNewUrlParser: true
 });
 
