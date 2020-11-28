@@ -12,11 +12,13 @@ app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({
 	extended: true
 }));
+// For css and other files for public use
 app.use(express.static("public"));
 
-mongoose.connect("mongodb+srv:///TodoListDB", {
-	useNewUrlParser: true
-});
+// Connecting with Database
+// mongoose.connect("mongodb+srv:///TodoListDB", {
+// 	useNewUrlParser: true
+// });
 
 const itemsSchema = {
 	name: String
